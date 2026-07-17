@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Chatbot for Student Support Services</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <!-- Dark mode toggle -->
+  <button id="theme-toggle" class="theme-toggle" title="Toggle dark mode">🌙</button>
+
+  <div class="landing-wrapper">
+    <div class="landing-card">
+      <div class="landing-icon">🎓</div>
+      <h1 class="landing-title">AI Chatbot for Student Support Services</h1>
+      <p class="landing-subtitle">
+        Your 24/7 virtual assistant for admissions, scholarships, courses, fees,
+        hostel, placements, library, exams, and more — powered by Google Gemini.
+      </p>
+
+      <ul class="feature-list">
+        <li>💬 Instant answers to common student queries</li>
+        <li>⚡ Fast, friendly, and always available</li>
+        <li>🔒 Focused only on student support topics</li>
+      </ul>
+
+      <a href="{{ url_for('chat') }}" class="start-btn">Start Chat 🚀</a>
+    </div>
+  </div>
+
+  <footer class="landing-footer">
+    Built with Flask + Google Gemini API &middot; Generative AI Course Project
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

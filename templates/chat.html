@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat - Student Support Assistant</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <!-- Dark mode toggle -->
+  <button id="theme-toggle" class="theme-toggle" title="Toggle dark mode">🌙</button>
+
+  <div class="chat-page-wrapper">
+    <div class="chat-container">
+
+      <!-- Header -->
+      <div class="chat-header">
+        <a href="{{ url_for('home') }}" class="back-link" title="Back to home">←</a>
+        <div class="chat-header-info">
+          <div class="bot-avatar">🎓</div>
+          <div>
+            <h2>Student Support Assistant</h2>
+            <span class="status-dot">● Online</span>
+          </div>
+        </div>
+        <button id="clear-chat-btn" class="clear-btn" title="Clear chat">🗑️</button>
+      </div>
+
+      <!-- Suggested Questions -->
+      <div class="suggested-questions" id="suggested-questions">
+        <button class="suggestion-chip">What are the admission requirements?</button>
+        <button class="suggestion-chip">How do I apply for a scholarship?</button>
+        <button class="suggestion-chip">What is the hostel fee?</button>
+        <button class="suggestion-chip">Tell me about placements.</button>
+      </div>
+
+      <!-- Chat messages area -->
+      <div class="chat-box" id="chat-box">
+        <div class="message bot-message">
+          <div class="bubble">
+            👋 Hi! I'm your Student Support Assistant. Ask me about admissions,
+            scholarships, courses, fees, hostel, placements, library, exams, and more!
+            <div class="timestamp"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Typing indicator -->
+      <div class="typing-indicator" id="typing-indicator" style="display: none;">
+        <div class="bubble typing-bubble">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <!-- Input area -->
+      <div class="chat-input-area">
+        <input
+          type="text"
+          id="user-input"
+          placeholder="Type your question here..."
+          autocomplete="off"
+        />
+        <button id="send-btn" class="send-btn" title="Send">➤</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
