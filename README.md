@@ -148,6 +148,7 @@ Open that URL in your browser. Click **"Start Chat"** to begin chatting!
 }
 ```
 
+
 **Example response:**
 ```json
 {
