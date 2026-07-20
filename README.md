@@ -148,6 +148,7 @@ Open that URL in your browser. Click **"Start Chat"** to begin chatting!
 }
 ```
 
+
 **Example response:**
 ```json
 {
@@ -157,14 +158,8 @@ Open that URL in your browser. Click **"Start Chat"** to begin chatting!
 
 ---
 
-## 📷 Screenshots
 
-> Add your own screenshots of the Home page and Chat page here after running the project.
 
-```
-screenshots/
-  ├── home-page.png
-  └── chat-page.png
 ```
 
 ---
