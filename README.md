@@ -76,6 +76,13 @@ AI-Student-Chatbot/
 ```
 
 ---
+## 📸 Screenshots
+
+### Home Page
+![Home Screenshot](screenshots/home.png)
+
+### Chat Interface
+![Chat Screenshot](screenshots/chat.png)
 
 ## ⚙️ Installation & Setup
 
